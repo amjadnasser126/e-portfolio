@@ -1,0 +1,227 @@
+/* Base */
+*{
+  font-family: Arial;
+}
+
+body{
+  background-color: whitesmoke;
+  color: black;
+  margin: 0;
+  overflow-x: hidden; /*pour éviter le débordement  */
+}
+
+/* Bannière / Images */
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Photo profil  */
+.header img{
+  width: 150px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom:0px;
+  top: 15px;
+  right: 15px;
+  align-self:flex-start;
+}
+
+/* Titre profil */
+.profil-titre span{
+  font-size: 40px;
+  font-weight: bold;
+  color: blue;
+  text-align: center;
+  display: block;
+}
+
+/* Logos  */
+.logo{
+  width: 170px;
+  height: auto;
+  position: static;      
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  display: block;
+}
+/*
+.logo2 img,
+.logo3 img,
+.logo4 img{
+  width: 100%;           
+  max-width: 220px;      
+  height: auto;
+  position: static;      
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  display: block;
+} */
+
+.logo2 img{
+width: 300px;
+  height: auto;
+ bottom: 15px;
+  right: 15px;
+  position: static;
+
+  
+  
+}
+.logo3 img{
+	  width: 300px;
+	  height: auto;
+	   bottom: 100px;
+	  right: 15px;
+	  position: static;
+}
+.logo4 img{
+  width: 300px;
+  height: auto;
+ bottom: 0px;
+  right:15px;
+  position: static;
+ 
+ 
+}
+
+/* Informations listés */
+ul.a{
+  list-style-type: circle;
+  list-style-position: inside;
+  color: darkcyan;
+  padding: 5px;
+}
+
+/* Titres */
+h1{
+  font-size: 32px;
+  margin: 0px 0px 15px 0px;
+  color: black;                
+  border-left: 8px solid yellow;
+  padding-left: 12px;
+}
+
+h2{
+  font-size: 20px;
+  margin: 0px 0px 10px 0px;
+  color: navy;                 
+}
+
+p{
+  line-height: 22px;
+}
+
+/* Zone de contenu  */
+section{
+  padding: 25px 0px;
+}
+
+/* Cartes */
+.bloc{
+  background-color: white;
+  border: 2px solid blue;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 15px 0px;
+  box-shadow: 6px 6px 0px orange;  
+  position: relative;
+}
+
+/* Variantes */
+.bloc-rose{
+  border: 2px solid purple;
+  box-shadow: 6px 6px 0px orange;
+}
+
+.bloc-vert{
+  border: 2px solid green;
+  box-shadow: 6px 6px 0px orange;
+  position: relative;
+  overflow: hidden;
+  padding-right: 15px; 
+}
+
+.bloc-vert2{
+  position: relative;
+  padding-right: 15px;
+}
+
+/* Hover */
+.bloc:hover{
+  background-color: beige; /*  */
+}
+
+/* Footer  */
+footer{
+  margin-top: 25px;
+  padding: 25px 0px;
+  border-top: 3px solid navy;
+  background-color: white;
+}
+
+/* Liens */
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+
+/* Tags */
+.tag{
+  display: inline-block;
+  background-color: navy;   
+  color: white;
+  padding: 6px 10px;
+  border-radius: 20px;
+  margin: 5px 6px 0px 0px;
+  font-size: 14px;
+}
+.tag-violet{ background-color: purple; }
+.tag-vert{ background-color: mediumseagreen; }
+.tag-lightblue{ background-color: lightblue; }
+
+/* Espacement listes */
+ul{
+  margin-top: 8px;
+}
+
+/* sur mobile */
+/*@media (max-width: 768px){
+  .profil-titre span{
+    font-size: 28px;
+  }
+  .header img{
+    width: 130px;
+  }
+  .logo2 img,
+  .logo3 img,
+  .logo4 img{
+    max-width: 300px;
+	position: static;
+  }
+}  */
+
+/*responsive*/
+
+@media (max-width: 768px){
+
+  .logo2 img,
+  .logo3 img,
+  .logo4 img{
+    position: static;     /* remise en position normale pour l'affichage mobile */
+    width: 100%;
+    max-width: 320px;
+    display: block;
+    margin: 10px auto;
+  }
+
+  .bloc-vert{
+    padding-right: 15px;
+  }
+}
